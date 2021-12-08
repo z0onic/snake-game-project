@@ -58,6 +58,8 @@ function snakeBuild() {
 }
 snakeBuild()
 
+highscoreEl.textContent = `Highscore: ${localStorage.getItem('highscore')}`
+
 function start() {
     currentSnake.forEach(i => squares[i].classList.remove('snake', 'tail', 'head'))
     squares[fruitIndex].classList.remove('apple')
