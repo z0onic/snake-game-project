@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,400;0,900;1,600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Genos', sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.game-area {
+    border: 2px solid black;
+    background: rgb(51, 204, 51);
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    margin: 25px 0 25px 0;
+}
+
+.start-btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    background: rgb(51, 204, 51);
+    font-family: 'Genos', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.start-btn:hover {
+    background: rgb(255, 255, 0);
+    /* color: white; */
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background: rgb(255, 255, 0);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px white, inset -2px -2px black;
+}
+
+.head {
+    background: black;
+    box-shadow: inset 2px 2px white, inset -2px -2px black, inset 5px 5px rgb(255, 255, 0), inset -7px -7px rgb(255, 255, 0);
+}
+
+.tail {
+    background: gold;
+    box-shadow: inset 2px 2px white, inset -2px -2px black;
+}
+
+/* .apple {
+    background: blue;
+} */
